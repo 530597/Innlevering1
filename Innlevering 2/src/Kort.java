@@ -15,10 +15,14 @@ public abstract class Kort {
 		this.fornavn = fornavn;
 		this.etternavn = etternavn;
 		this.kode = kode;
-		Kort.kortnummer = random.nextInt(9999) + 10000;		//Genererer kortnummer på 5 siffer, starter med 1
+		Kort.kortnummer = random.nextInt(9999) + 10000;		//Genererer kortnummer på 5 siffer.
 		this.sperretKort = false;
 	}
 	
+	public Kort() {
+		//super
+	}
+
 	public String getNavn() {
 		return fornavn + " " + etternavn;
 	}
